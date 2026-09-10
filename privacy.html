@@ -1,72 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SocialXchange — Privacy Policy</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f7; color: #1d1d1f; }
-        .container { max-width: 720px; margin: 0 auto; padding: 60px 24px; }
-        h1 { font-size: 2rem; margin-bottom: 8px; }
-        .updated { color: #86868b; font-size: 0.95rem; margin-bottom: 40px; }
-        h2 { font-size: 1.2rem; margin: 28px 0 12px; }
-        p, li { color: #424245; line-height: 1.7; margin-bottom: 12px; }
-        ul { padding-left: 20px; margin-bottom: 12px; }
-        a { color: #0071e3; text-decoration: none; }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SocialXchange — Privacy Policy</title>
+<style>
+  :root { --ink:#1a1a2e; --muted:#5b5b6b; --line:#e5e5ee; --accent:#2f5bea; --bg:#ffffff; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:#f6f7fb; color:var(--ink);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  .wrap { max-width:820px; margin:0 auto; padding:32px 22px 80px; }
+  nav.top { max-width:820px; margin:0 auto; padding:18px 22px 0; font-size:14px; }
+  nav.top a { color:var(--accent); text-decoration:none; margin-right:18px; }
+  nav.top a:hover { text-decoration:underline; }
+  header.doc { background:var(--bg); border:1px solid var(--line); border-radius:16px;
+    padding:28px 30px; margin-bottom:26px; }
+  h1 { font-size:28px; margin:0 0 6px; letter-spacing:-.3px; }
+  .sub { color:var(--muted); font-size:14px; margin:2px 0; }
+  main { background:var(--bg); border:1px solid var(--line); border-radius:16px; padding:12px 30px 34px; }
+  h2 { font-size:19px; margin:32px 0 8px; padding-top:14px; border-top:1px solid var(--line); letter-spacing:-.2px; }
+  h2:first-of-type { border-top:none; }
+  h3 { font-size:16px; margin:20px 0 6px; }
+  p, li { color:#26263a; }
+  ul { padding-left:22px; margin:8px 0; }
+  li { margin:4px 0; }
+  a { color:var(--accent); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  .note { background:#f2f5ff; border:1px solid #d9e2ff; border-radius:10px; padding:12px 16px; margin:14px 0; font-size:14.5px; }
+  footer { text-align:center; color:var(--muted); font-size:13px; margin-top:26px; }
+  @media (max-width:560px){ main,header.doc{padding-left:20px;padding-right:20px;} }
+</style>
 </head>
 <body>
-    <div class="container">
-        <h1>Privacy Policy</h1>
-        <p class="updated">Last updated: July 8, 2026</p>
+<nav class="top"><a href="index.html">← Support</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms &amp; EULA</a></nav>
+<div class="wrap">
 
-        <h2>1. Introduction</h2>
-        <p>SocialXchange ("we", "our", "the app") is a campus exchange application for university students. This Privacy Policy explains how we collect, use, and protect your information.</p>
+  <header class="doc">
+    <h1>SocialXchange — Privacy Policy</h1>
+    <p class="sub"><strong>Effective Date:</strong> 10 September 2026</p>
+    <p class="sub"><strong>Last Updated:</strong> 10 September 2026</p>
+    <p class="sub"><strong>Developers:</strong> Kayra Yılmaz and İsmet Ozan Karabınar</p>
+    <p class="sub"><strong>Country:</strong> Bosnia and Herzegovina</p>
+    <p class="sub"><strong>Contact:</strong> <a href="mailto:rebucate@gmail.com">rebucate@gmail.com</a></p>
+  </header>
 
-        <h2>2. Information We Collect</h2>
-        <p>When you use SocialXchange, we may collect the following information:</p>
-        <ul>
-            <li><strong>Account Information:</strong> Your name, university email address, and user ID, obtained through Microsoft (MSAL) university authentication.</li>
-            <li><strong>Profile Information:</strong> Profile photo (if uploaded).</li>
-            <li><strong>User-Generated Content:</strong> Listings, lost & found reports, order posts, requests, and messages you create within the app.</li>
-            <li><strong>Photos:</strong> Images you upload for marketplace listings or lost & found reports.</li>
-        </ul>
+  <main>
+    <p>This Privacy Policy explains how <strong>SocialXchange</strong> ("the App", "we", "us", or "our")
+    collects, uses, stores, shares, and protects information when you use the application. Please read it
+    carefully. By using SocialXchange, you agree to the practices described in this Privacy Policy.</p>
 
-        <h2>3. How We Use Your Information</h2>
-        <p>We use your information to:</p>
-        <ul>
-            <li>Authenticate your identity as a university student</li>
-            <li>Display your listings, reports, and messages to other users</li>
-            <li>Enable communication between buyers, sellers, and other users</li>
-            <li>Send notifications about your activity (messages, orders, listings)</li>
-        </ul>
-
-        <h2>4. Data Storage & Security</h2>
-        <p>Your data is stored securely on Supabase cloud infrastructure with row-level security (RLS) policies ensuring users can only access their own private data. All data is transmitted over HTTPS using industry-standard TLS encryption.</p>
-
-        <h2>5. Data Sharing</h2>
-        <p>We do not sell, trade, or share your personal information with third parties. Your data is only visible to other authenticated university users within the app as necessary for the app's functionality (e.g., your listing details are visible to other users).</p>
-
-        <h2>6. Third-Party Services</h2>
-        <p>SocialXchange uses the following third-party services:</p>
-        <ul>
-            <li><strong>Microsoft Authentication (MSAL):</strong> For secure university account sign-in.</li>
-            <li><strong>Supabase:</strong> For secure data storage and real-time features.</li>
-        </ul>
-
-        <h2>7. Data Retention</h2>
-        <p>Your data is retained as long as your account is active. You may request deletion of your account and associated data by contacting us.</p>
-
-        <h2>8. Children's Privacy</h2>
-        <p>SocialXchange is intended for university students and is not directed at children under 17.</p>
-
-        <h2>9. Changes to This Policy</h2>
-        <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated date.</p>
-
-        <h2>10. Contact Us</h2>
-        <p>If you have questions about this Privacy Policy, contact us at:<br>
-        <a href="mailto:kayrayilmazedu203@gmail.com">kayrayilmazedu203@gmail.com</a></p>
+    <div class="note">
+      SocialXchange is a university-community application intended for verified students of the
+      International University of Sarajevo (IUS). Access requires authentication with a
+      university-provided Microsoft account. The App does not sell personal information, does not
+      display advertisements, and does not use third-party advertising or cross-app tracking.
     </div>
+
+    <h2>1. Scope of This Privacy Policy</h2>
+    <p>This Privacy Policy applies to personal information processed through the SocialXchange application
+    and its supporting backend services. It does not apply to third-party services that you access
+    independently of SocialXchange; those services have their own privacy policies and terms.</p>
+
+    <h2>2. Application Overview</h2>
+    <p>SocialXchange enables verified university students to interact with one another. Its features
+    include:</p>
+    <ul>
+      <li><strong>Marketplace listings</strong> — create, browse, comment on, reply to, and save item listings;</li>
+      <li><strong>Lost &amp; Found posts</strong> — report and browse lost or found items;</li>
+      <li><strong>Order posts</strong> — post group-order requests (e.g. items to be brought from another destination);</li>
+      <li><strong>User profiles</strong> — a student profile with a photo and basic information;</li>
+      <li><strong>Direct messaging</strong> — one-to-one conversations between users;</li>
+      <li><strong>Announcements</strong> — informational posts published by the App administrators.</li>
+    </ul>
+    <p>Users are responsible for the content they submit and for their interactions with other users.</p>
+
+    <h2>3. Information We Collect</h2>
+    <p>We collect and process only information reasonably necessary to provide, secure, maintain, and
+    improve the App.</p>
+
+    <h3>3.1 Account and Authentication Information</h3>
+    <p>Access to SocialXchange requires authentication with a university-provided Microsoft account.
+    Authentication is performed using the <strong>Microsoft Authentication Library (MSAL)</strong>
+    integrated directly into the App. The App verifies, through our secure backend, that the Microsoft
+    account belongs to the IUS school directory before granting access. We process:</p>
+    <ul>
+      <li>Your full name;</li>
+      <li>Your university email address;</li>
+      <li>Microsoft/Azure directory identifiers contained in the authentication token (such as your directory tenant and object identifiers);</li>
+      <li>An internal user ID generated for your SocialXchange account.</li>
+    </ul>
+    <p>SocialXchange does not use Sign in with Apple or Sign in with Google.</p>
+
+    <h3>3.2 Profile Information</h3>
+    <p>Your SocialXchange profile may include:</p>
+    <ul>
+      <li>Name and university email address;</li>
+      <li>Profile photograph (either one you upload, or, as a fallback, your Microsoft account photo);</li>
+      <li>Faculty, graduation year, preferred language, and meet-up preference;</li>
+      <li>Your notification preferences.</li>
+    </ul>
+    <p>You choose what optional profile information to provide.</p>
+
+    <h3>3.3 User-Generated Content</h3>
+    <p>SocialXchange lets you create and submit content, which may include:</p>
+    <ul>
+      <li>Marketplace listings, descriptions, and photographs;</li>
+      <li>Comments and replies on listings;</li>
+      <li>Lost &amp; Found posts and photographs;</li>
+      <li>Order posts;</li>
+      <li>Profile photographs;</li>
+      <li>Chat messages.</li>
+    </ul>
+    <p>Depending on the feature, user-generated content may be visible to other authorized users of the App.</p>
+
+    <h3>3.4 Photos and Media</h3>
+    <p>SocialXchange requests access to your <strong>camera</strong> and <strong>photo library</strong>
+    only when you choose to take or select a photo for a listing, a Lost &amp; Found post, or your profile.
+    The App does not access your photo library unless you actively select or capture media through its
+    functionality. Photographs are stored in our backend storage and are not used for advertising or
+    facial-recognition purposes.</p>
+
+    <h3>3.5 Messages and Communications</h3>
+    <p>Messages you send through the App are stored on our backend so the messaging feature can function.
+    Messages are processed to deliver communications, generate notification previews, screen content for
+    safety (see Section 4), maintain security, investigate reports of abuse, and comply with applicable
+    legal obligations. <strong>Messages are not end-to-end encrypted.</strong> They are protected in
+    transit and at rest by our infrastructure provider, and may be accessible to authorized personnel or
+    automated systems where reasonably necessary for the purposes described in this Policy. Messages are
+    not used for targeted advertising.</p>
+
+    <h3>3.6 Reminders</h3>
+    <p>If you tap "Remind me" on an announcement, the App will — with your permission — create a reminder
+    in your device's Apple Reminders app. This uses Apple's on-device Reminders functionality. We do not
+    upload the contents of your Reminders app to our servers; only your in-app opt-in is stored.</p>
+
+    <h3>3.7 Push Notifications</h3>
+    <p>SocialXchange uses the Apple Push Notification service (APNs) to deliver notifications about
+    messages, comments, and saves. To do this, we store your device's push token together with your user
+    ID and platform information. You can disable notifications at any time in your device settings.</p>
+
+    <h3>3.8 Technical, Security, and Log Information</h3>
+    <p>When you use the App, our infrastructure and service providers may automatically process technical
+    and security information, which may include your IP address, authentication logs, request metadata,
+    error information, and basic device or connection information necessary to operate and secure the
+    service. This information is used for authentication, security, abuse and fraud prevention, and
+    service reliability. It is not used for behavioral advertising or cross-app tracking.</p>
+
+    <h3>3.9 Information We Do Not Collect</h3>
+    <p>SocialXchange does <strong>not</strong> collect or request:</p>
+    <ul>
+      <li>Precise GPS or location data;</li>
+      <li>Access to your contacts or address book;</li>
+      <li>Microphone or audio recordings;</li>
+      <li>Financial account, banking, or payment-card information (the App does not process payments — any exchange between students happens independently of the App and is the users' responsibility);</li>
+      <li>Advertising identifiers, or any data used for targeted advertising or cross-app tracking.</li>
+    </ul>
+
+    <h2>4. Automated Content Screening</h2>
+    <p>To keep the community safe and comply with App Store requirements for user-generated content, text
+    that users submit may be sent to <strong>Microsoft Azure AI Content Safety</strong> and
+    <strong>Microsoft Azure Translator</strong> for automated screening. These services classify content
+    for categories such as hate, self-harm, sexual, and violent content, and translate text where needed
+    to perform that screening. This automated processing helps us detect and block objectionable content.</p>
+
+    <h2>5. How We Use Personal Information</h2>
+    <p>We use personal information to:</p>
+    <ul>
+      <li>Create and maintain accounts and authenticate users;</li>
+      <li>Verify eligibility for access to the IUS student community;</li>
+      <li>Provide the marketplace, Lost &amp; Found, order-post, profile, messaging, and announcement features;</li>
+      <li>Store and display user-generated content and photographs;</li>
+      <li>Deliver notifications;</li>
+      <li>Provide security, and detect, investigate, and prevent abuse, fraud, and unauthorized access;</li>
+      <li>Respond to reports and complaints, moderate content, and enforce our Terms of Use and community rules;</li>
+      <li>Maintain and secure our infrastructure and diagnose technical problems;</li>
+      <li>Comply with legal obligations and respond to lawful requests from authorities where required;</li>
+      <li>Protect the rights, safety, and security of users and the service.</li>
+    </ul>
+
+    <h2>6. Legal Bases for Processing (GDPR)</h2>
+    <p>Where the EU General Data Protection Regulation (GDPR) or similar law applies, we rely on one or
+    more of the following legal bases:</p>
+    <ul>
+      <li><strong>Performance of a contract</strong> — to provide the features you request, including account creation, authentication, and communication;</li>
+      <li><strong>Legitimate interests</strong> — for security, fraud and abuse prevention, moderation, service reliability, and protecting users, where not overridden by your rights;</li>
+      <li><strong>Consent</strong> — where processing legally requires it (for example, device permissions you grant); you may withdraw consent where applicable, without affecting prior lawful processing;</li>
+      <li><strong>Legal obligations</strong> — where we must process or retain information to comply with law.</li>
+    </ul>
+
+    <h2>7. User-Generated Content and Community Safety</h2>
+    <p>SocialXchange contains user-generated content and social functionality. You are responsible for the
+    content you submit and must comply with our <a href="terms.html">Terms of Use &amp; EULA</a>, community
+    rules, and applicable law.</p>
+    <p>The App provides tools to <strong>report</strong> inappropriate content or users, and to
+    <strong>block</strong> other users. You must also accept our End-User License Agreement (EULA), which
+    prohibits objectionable content and abusive behavior, before using the App.</p>
+    <p>We review reports of objectionable content and <strong>act within 24 hours</strong> by removing the
+    content and ejecting the user who provided it. We may restrict, remove, or disable access to content
+    or accounts, and may suspend or permanently terminate accounts, to enforce our rules, respond to
+    reports, prevent abuse, protect users, investigate security incidents, or comply with law. To report
+    content or appeal an action, contact us in the App under <strong>Profile → Help &amp; Support</strong>
+    or by email at <a href="mailto:rebucate@gmail.com">rebucate@gmail.com</a>.</p>
+
+    <h2>8. Third-Party Service Providers</h2>
+    <p>We use selected third-party service providers to operate the App. They may access information only
+    as necessary to provide their services, maintain security, or comply with law.</p>
+
+    <h3>8.1 Supabase</h3>
+    <p>We use <strong>Supabase</strong> for backend infrastructure, including authentication, a PostgreSQL
+    database, file/object storage, and server-side (Edge) functions. Information processed through Supabase
+    may include account and authentication information, user IDs, university email addresses, profiles,
+    listings, Lost &amp; Found posts, order posts, comments, photographs, messages, notifications, and
+    technical and security information (such as IP addresses and logs). Supabase may use subprocessors and
+    cloud infrastructure providers to deliver its services.</p>
+
+    <h3>8.2 Microsoft</h3>
+    <p>We use <strong>Microsoft</strong> for two purposes:</p>
+    <ul>
+      <li><strong>Authentication</strong> — via Microsoft/Azure Active Directory (Entra ID) and the Microsoft Authentication Library (MSAL), restricted to the IUS directory;</li>
+      <li><strong>Content screening</strong> — via Microsoft Azure AI Content Safety and Azure Translator, as described in Section 4.</li>
+    </ul>
+    <p>Microsoft processes information in accordance with its own privacy practices, which we do not control.</p>
+
+    <h3>8.3 Apple</h3>
+    <p>SocialXchange is distributed through Apple's App Store and uses Apple's Push Notification service
+    (APNs). Apple may process information relating to app installation, diagnostics, and notification
+    delivery according to Apple's own terms and privacy policy, which we do not control.</p>
+
+    <h3>8.4 International Data Transfers</h3>
+    <p>Because we use third-party infrastructure, personal information may be processed or stored outside
+    Bosnia and Herzegovina and outside the country in which you reside. Where applicable law requires
+    safeguards for international transfers, we seek to rely on legally recognized transfer mechanisms and
+    appropriate contractual safeguards.</p>
+
+    <h2>9. Analytics, Crash Reporting, and Advertising</h2>
+    <p>SocialXchange does <strong>not</strong> integrate third-party analytics platforms (such as Google
+    Analytics, Firebase, Mixpanel, PostHog, Amplitude, or Segment), third-party crash-reporting SDKs
+    (such as Crashlytics, Sentry, or Bugsnag), or any advertising or attribution SDKs. The App displays no
+    third-party advertisements and does not sell personal information or use it for targeted advertising.
+    Apple may provide us with aggregate or diagnostic information through its own App Store and
+    operating-system mechanisms, subject to your device settings.</p>
+
+    <h2>10. Data Sharing</h2>
+    <p>We do not sell personal information. We share or permit access to information only where reasonably
+    necessary for providing App functionality, authentication, hosting, storage, security, abuse
+    prevention, moderation, technical support, legal compliance, protecting users and the service, or in
+    connection with a corporate transaction if one occurs. We do not share personal information with
+    advertisers for targeted advertising.</p>
+
+    <h2>11. Public and Private Content</h2>
+    <p>Some information you submit may be visible to other users — for example, marketplace listings, Lost
+    &amp; Found posts, order posts, profile information, and associated photographs. Please avoid publishing
+    sensitive personal information in areas visible to others. Direct messages are intended to be private
+    between participants but may be accessed as described in Section 3.5. We cannot guarantee the
+    confidentiality of information you voluntarily make visible to others.</p>
+
+    <h2>12. Data Retention</h2>
+    <p>We retain personal information only for as long as reasonably necessary to provide the App, maintain
+    security, enforce our policies, resolve disputes, and comply with legal obligations. Retention periods
+    vary with the type of information, whether your account remains active, and applicable legal
+    requirements. Inactive conversations that all participants have hidden are automatically deleted after
+    a period. When information is no longer required, it is deleted or anonymized. Residual copies may
+    persist in secure backups for a limited period before being overwritten.</p>
+
+    <h2>13. Account Deletion</h2>
+    <p>You may delete your account and associated personal information at any time, directly in the App:
+    go to <strong>Profile → Delete Account</strong> and confirm. When you delete your account, we remove
+    the personal information associated with it — including your profile, listings, Lost &amp; Found posts,
+    order posts, saved items, notifications, device (push) tokens, your participation in conversations, and
+    your authentication record. Certain information may be retained temporarily where required for legal
+    compliance, security, fraud prevention, or dispute resolution, and residual copies may remain in
+    secure backups for a limited period before being overwritten.</p>
+
+    <h2>14. Data Security</h2>
+    <p>We use reasonable technical and organizational measures to protect personal information, including
+    authentication and access controls, encrypted connections (TLS), encryption of stored data by our
+    infrastructure provider, database and storage access controls, security monitoring, and regular
+    maintenance. No system or method of transmission is completely secure, so we cannot guarantee absolute
+    security.</p>
+
+    <h2>15. Your Privacy Rights</h2>
+    <p>Depending on where you live, you may have rights to access, correct, delete, restrict, or object to
+    the processing of your personal information; to data portability; to withdraw consent; and to lodge a
+    complaint with a competent data-protection authority. Where applicable U.S. state privacy laws apply,
+    you may have rights to know, access, correct, delete, and opt out of the sale or sharing of personal
+    information for targeted advertising — which we do not do. To exercise any right, contact us at
+    <a href="mailto:rebucate@gmail.com">rebucate@gmail.com</a>. We may need to verify your identity before
+    responding, and some rights are subject to legal limitations and exceptions.</p>
+
+    <h2>16. Children's Privacy</h2>
+    <p>SocialXchange is intended for university students and is not directed to children. Access requires a
+    valid IUS Microsoft account. We do not knowingly collect personal information from children in
+    violation of applicable law. If we learn we have done so, we will take reasonable steps to delete that
+    information.</p>
+
+    <h2>17. Cookies and Similar Technologies</h2>
+    <p>The native SocialXchange app does not use browser cookies for advertising or behavioral tracking.
+    Our authentication and infrastructure providers may use technical mechanisms necessary for
+    authentication, session management, security, and service operation.</p>
+
+    <h2>18. Third-Party Links</h2>
+    <p>The App may contain links or references to services operated by third parties. Those services
+    operate independently and have their own privacy policies and terms. We are not responsible for the
+    privacy practices of services we do not control.</p>
+
+    <h2>19. Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy from time to time. When we make material changes, we will update
+    the "Last Updated" date and, where appropriate, provide additional notice through the App or other
+    reasonable means. Please review this Policy periodically.</p>
+
+    <h2>20. Contact Us</h2>
+    <p>For privacy questions, requests, complaints, or concerns regarding SocialXchange, contact:</p>
+    <ul>
+      <li><strong>Developers:</strong> Kayra Yılmaz and İsmet Ozan Karabınar</li>
+      <li><strong>Country:</strong> Bosnia and Herzegovina</li>
+      <li><strong>Email:</strong> <a href="mailto:rebucate@gmail.com">rebucate@gmail.com</a></li>
+      <li><strong>Privacy Policy:</strong> <a href="https://kayraobi.github.io/socialxchange-support/privacy.html">https://kayraobi.github.io/socialxchange-support/privacy.html</a></li>
+    </ul>
+    <p>If you are exercising a legal privacy right, please clearly describe your request. We may request
+    information necessary to verify your identity and protect your account.</p>
+
+    <footer>© 2026 SocialXchange · Kayra Yılmaz &amp; İsmet Ozan Karabınar · Last updated 10 September 2026</footer>
+  </main>
+</div>
 </body>
 </html>
